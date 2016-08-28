@@ -11,12 +11,19 @@
       :host {
         display: inline-block;
       }
+      iron-icon {
+        fill: rgba(0,0,0,0);
+        stroke: currentcolor;
+      }
+      :host([pressed]) iron-icon {
+        fill: currentcolor;
+      }
     </style>
 
     <!-- local DOM goes here -->
     <!--<span>Not much here yet.</span>-->
-    <icon-toggle icon="polymer">
-    </icon-toggle>
+    <icon-icon icon="polymer">
+    </icon-icon>
   </template>
 
   <script>
